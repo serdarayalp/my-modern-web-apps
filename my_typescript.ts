@@ -1,0 +1,1 @@
+function ShowTime(toDayDate: Date) {}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+
+    <!--
+    title: ist der Titel des HTML-Dokuments.
+    base: setzt Basis-URLs/Ziele für alle relativen URLs in einer Webseite.
+    link: setzt logische Links des HTML-Dokuments zu anderen Dateien.
+    style: verweist auf die lokalen Stylesheetregeln für das HTML-Dokument.
+    script: bindet die Skripte ein.
+    meta: setzt die Metadaten wie Schlüsselwörter oder den Zeichensatz.
+    -->
+
+    <link rel="stylesheet" type="text/css" href="my_css.css">
+
+    <script type="text/javascript" src="my_js.js"></script>
+
+    <!--    
+    <script src="async.js" async></script>
+    <script src="defer.js" defer></script>   
+    
+    Beide Attribute (async, defer) sorgen dafür, dass die eingebundenen Scripte das Laden bzw. 
+    Rendern der Webseite nicht blockieren. 
+
+    Der Unterschied liegt bei der Ausführung der Scripte. Mit dem „async“ Attribut werden die Scripte 
+    unmittelbar nach dem erfolgreichen Abschluss des Ladevorgangs ausgeführt, dies könnte z.B. auch noch vor 
+    Ausführung des window load Events passieren. Weiterhin wird die Reihenfolge der Scripte nicht beachtet. 
+    Die Scripte werden getreu dem Motto „First-come, first-served“ abgearbeitet. Wenn es dabei Abhängigkeiten 
+    zwischen den Scripten gibt, kann es zu Problemen kommen.
+
+    Das „defer“ Attribut ist hier etwas kompatibler und einfacher zu verwenden. Hier werden die Scripte 
+    in der Reihenfolge abgearbeitet, in der sie eingebunden wurden. Weiterhin werden sie erst nach dem 
+    vollständigen Laden des DOM’s ausgeführt, aber noch bevor das Event DOMContentLoaded getriggert wird.    
+    -->
+
+</head>
+
+<body>
+
+    <!-- 
+    Folgende HTML-Elemente stehen für eine Seitenstrukturierung zur Auswahl:
+
+        body – Inhaltsbereich des HTML-Dokuments
+        section – Unterteilung in verschiedene Abschnitte
+        article – Unterteilung von Inhalten in einen Block
+        aside wird für marginale Informationen eines Inhalts wie einer Seitenleiste oder für zusätzliche Informationen zu einem Artikel verwendet
+        nav – Element zur Darstellung der Navigation
+        h1, h2, …, h6 – Überschriften der Ebene eins bis sechs
+        header – Kopfbereich des Inhalts
+        footer – Fußbereich des Inhalts
+        address – Kontaktinformationen
+
+    -->
+
+    <h1>Herzlich Willkommen </h1>
+    <p>Zum ersten Teil der neuen Serie zur Web-Programmierung</p>
+    <p>Das heutige Thema lautet HTML5-Refresh.</p>
+
+    <h1>Beschreibungslisten</h1>
+    <dl>
+        <dt>allg.</dt>
+        <dd>allgemein</dd>
+
+        <dt>bez.</dt>
+        <dd>bezüglich</dd>
+        <dd>bezahlt</dd>
+
+        <dt>u. a.</dt>
+        <dd>unter anderem, unter anderen</dd>
+        <dd>und andere, und anderes</dd>
+
+        <dt>zzgl.</dt>
+        <dd>zuzüglich</dd>
+    </dl>
+</body>
+
+</html>
